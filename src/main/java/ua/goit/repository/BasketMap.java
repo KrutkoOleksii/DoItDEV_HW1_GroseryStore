@@ -1,7 +1,4 @@
-package ua.goit.service;
-
-import ua.goit.repository.Goods;
-import ua.goit.repository.GoodsIntf;
+package ua.goit.repository;
 
 import java.util.HashMap;
 import java.util.Map;

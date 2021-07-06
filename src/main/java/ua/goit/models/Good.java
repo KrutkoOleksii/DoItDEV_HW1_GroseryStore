@@ -7,7 +7,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class Good {
     private Character code;
-    private String name;
     private Double price;
     private Promo promo;
 }

@@ -5,7 +5,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class CalculateBasketTest {
-    private CalculateBasket calculateBasket = new CalculateBasket();
+    private CalculateBasket calculateBasket;
+
+    @Before
+    public void createGoods(){
+        calculateBasket = new CalculateBasket();
+    }
 
     @Test
     public void sumOfBasketTest() {

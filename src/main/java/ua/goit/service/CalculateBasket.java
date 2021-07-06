@@ -1,5 +1,8 @@
 package ua.goit.service;
 
+import ua.goit.repository.BasketMap;
+import ua.goit.repository.BasketMapIntf;
+
 import java.util.Map;
 
 public class CalculateBasket implements CalculateBasketIntf{

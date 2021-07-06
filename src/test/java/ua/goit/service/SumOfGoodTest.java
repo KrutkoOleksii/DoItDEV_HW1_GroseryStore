@@ -1,10 +1,16 @@
 package ua.goit.service;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class SumOfGoodTest {
-    private SumOfGood sumOfGood = new SumOfGood();
+    private SumOfGood sumOfGood;
+
+    @Before
+    public void createGoods(){
+        sumOfGood = new SumOfGood();
+    }
 
     @Test
     public void sumOfGoodA(){

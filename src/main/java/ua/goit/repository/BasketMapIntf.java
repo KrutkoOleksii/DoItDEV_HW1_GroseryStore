@@ -1,4 +1,4 @@
-package ua.goit.service;
+package ua.goit.repository;
 
 import java.util.Map;
 
