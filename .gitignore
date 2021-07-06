@@ -1,8 +1,15 @@
 # Default ignored files
-/shelf/
-/.idea/workspace.xml
-/.idea/
-/target/
+shelf/
+
+# Intellij
+.idea/
 *.iml
 *.iws
-*.log
+
+# Maven
+log/
+target/
+
+# Mac
+.DS_Store
+/target/

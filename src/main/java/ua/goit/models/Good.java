@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Good {
-    private Character code;
+    private Character id;
     private Double price;
     private Promo promo;
 }

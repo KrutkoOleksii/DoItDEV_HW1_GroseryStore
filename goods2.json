@@ -1,0 +1,34 @@
+{
+  "A":{
+    "id":"A",
+    "price":1.25,
+    "promo":{
+      "promoQuantity":3,
+      "promoPrice":3.0
+    }
+  },
+  "B":{
+    "id":"B",
+    "price":4.25,
+    "promo":{
+      "promoQuantity":0,
+      "promoPrice":0.0
+    }
+  },
+  "C":{
+    "id":"C",
+    "price":1.0,
+    "promo":{
+      "promoQuantity":6,
+      "promoPrice":5.0
+    }
+  },
+  "D":{
+    "id":"D",
+    "price":0.75,
+    "promo":{
+      "promoQuantity":0,
+      "promoPrice":0.0
+    }
+  }
+}
