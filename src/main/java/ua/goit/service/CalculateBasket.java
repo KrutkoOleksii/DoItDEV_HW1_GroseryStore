@@ -1,23 +1,27 @@
 package ua.goit.service;
 
-import ua.goit.repository.BasketMap;
-import ua.goit.repository.BasketMapIntf;
+import ua.goit.repository.CountingGoodsInBasketIntf;
 
 import java.util.Map;
 
 public class CalculateBasket implements CalculateBasketIntf{
 
-    private final SumOfGood sumOfGood = SumOfGoodIntf.of();
-    private final BasketMap basketMap = BasketMapIntf.of();
+    private final SumOfGoodIntf sumOfGood = SumOfGoodIntf.of();
+    private final CountingGoodsInBasketIntf countingGoodsInBasket = CountingGoodsInBasketIntf.of();
 
     @Override
     public Double sumOfBasket(String basketString) {
-        Map<Character,Integer> basket = basketMap.getBasketMap(basketString);
-        Double sum = 0.00D;
-        for (Map.Entry<Character,Integer> o : basket.entrySet()) {
-            sum += sumOfGood.calculateSumOfGood(o.getKey(), o.getValue());
+        try {
+            Map<Character, Integer> basket = countingGoodsInBasket.countingGoods(basketString);
+            Double sum = 0.0;
+            for (Map.Entry<Character,Integer> o : basket.entrySet()) {
+                sum += sumOfGood.calculateSumOfGood(o.getKey(), o.getValue());
+            }
+            return sum;
+        } catch (NullPointerException e){
+            System.out.println(e);
+            return 0.0;
         }
-        return sum;
     }
 
 }

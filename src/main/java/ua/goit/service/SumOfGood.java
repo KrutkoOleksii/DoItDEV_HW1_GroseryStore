@@ -4,7 +4,7 @@ import ua.goit.repository.Goods;
 import ua.goit.repository.GoodsIntf;
 
 public class SumOfGood implements SumOfGoodIntf{
-    private final Goods goods = GoodsIntf.of();
+    private final GoodsIntf goods = GoodsIntf.of();
 
     @Override
     public Double calculateSumOfGood(Character id, Integer quantity) {

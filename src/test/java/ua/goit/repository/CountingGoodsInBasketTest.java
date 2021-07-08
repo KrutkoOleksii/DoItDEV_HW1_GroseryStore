@@ -7,22 +7,22 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BasketMapTest {
-    BasketMap basketMap;
+public class CountingGoodsInBasketTest {
+    CountingGoodsInBasket countingGoodsInBasket;
 
     @Before
     public void createGoods(){
-        basketMap = new BasketMap();
+        countingGoodsInBasket = new CountingGoodsInBasket();
     }
 
     @Test
-    public void sumOfBasketTest() {
+    public void testSumOfBasket() {
         String basket = "67890ABBCCCDDDDF12345qwerty";
         Map<Character,Integer> testMap = new HashMap<>();
         testMap.put('A',1);
         testMap.put('B',2);
         testMap.put('C',3);
         testMap.put('D',4);
-        Assert.assertEquals(testMap, basketMap.getBasketMap(basket));
+        Assert.assertEquals(testMap, countingGoodsInBasket.countingGoods(basket));
     }
 }
