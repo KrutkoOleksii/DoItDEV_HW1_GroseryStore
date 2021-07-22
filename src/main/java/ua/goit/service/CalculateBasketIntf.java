@@ -4,7 +4,7 @@ public interface CalculateBasketIntf {
 
     Double sumOfBasket(String basket);
 
-    static CalculateBasket of(){
+    static CalculateBasketIntf of(){
         return new CalculateBasket();
     }
 }

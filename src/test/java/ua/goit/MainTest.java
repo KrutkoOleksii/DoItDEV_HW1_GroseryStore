@@ -1,6 +1,7 @@
 package ua.goit;
 
 import org.junit.Test;
+import ua.goit.main.Main;
 
 public class MainTest {
 

@@ -1,10 +1,10 @@
 package ua.goit.service;
 
-public interface SumOfGoodIntf {
+public interface SumOfGoodIntf <ID>{
 
-    Double calculateSumOfGood(Character id, Integer quantity);
+    Double calculateSumOfGood(ID id, Integer quantity);
 
-    static SumOfGood of() {
+    static SumOfGoodIntf of() {
         return new SumOfGood();
     }
 }

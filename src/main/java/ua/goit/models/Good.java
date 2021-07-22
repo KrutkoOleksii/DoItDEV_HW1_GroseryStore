@@ -5,8 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Good {
-    private Character code;
+public class Good implements BaseEntity<String>{
+    private String id;
     private Double price;
     private Promo promo;
 }

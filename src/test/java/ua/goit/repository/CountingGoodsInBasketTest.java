@@ -3,12 +3,13 @@ package ua.goit.repository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import ua.goit.service.CountingGoodsInBasket;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CountingGoodsInBasketTest {
-    CountingGoodsInBasket countingGoodsInBasket;
+    CountingGoodsInBasket<String,Integer> countingGoodsInBasket;
 
     @Before
     public void createGoods(){
