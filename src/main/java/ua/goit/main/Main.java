@@ -21,7 +21,7 @@ public class Main {
     }
 
     public void calculate() {
-        String basket = "ABCDACCDABCAF";
+        String basket = "ABCDACCDABCA";
         Double sum = calculateBasket.sumOfBasket(basket);
         System.out.println("sum = "+sum);
     }

@@ -48,6 +48,7 @@ public class Base<ID, K extends BaseEntity<ID>> implements BaseIntf<ID, K> {
 
     @Override
     public boolean existsById(ID id) {
+
         return false;
     }
 
