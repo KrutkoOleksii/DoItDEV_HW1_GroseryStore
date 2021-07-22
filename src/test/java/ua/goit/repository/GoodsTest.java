@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class GoodsTest {
 
-    private BaseIntf<String ,Good> goods;
+    private BaseIntf<String ,Good> goods = Factory.of(Good.class);
 
     @Before
     public void createGoods(){
