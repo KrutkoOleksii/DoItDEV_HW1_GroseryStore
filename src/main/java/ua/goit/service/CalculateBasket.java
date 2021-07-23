@@ -3,7 +3,7 @@ package ua.goit.service;
 public class CalculateBasket implements CalculateBasketIntf{
 
     private final SumOfGoodIntf<String> sumOfGood = SumOfGoodIntf.of();
-    private final CountingGoodsInBasketIntf<String,Integer> countingGoodsInBasket = CountingGoodsInBasketIntf.of();
+    private final CountingGoodsInBasketIntf<String, Long> countingGoodsInBasket = CountingGoodsInBasketIntf.of();
 
     @Override
     public Double sumOfBasket(String basketString) {

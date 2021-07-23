@@ -19,11 +19,11 @@ public class CountingGoodsInBasketTest {
     @Test
     public void testSumOfBasket() {
         String basket = "67890ABBCCCDDDDF12345qwerty";
-        Map<Character,Integer> testMap = new HashMap<>();
-        testMap.put('A',1);
-        testMap.put('B',2);
-        testMap.put('C',3);
-        testMap.put('D',4);
+        Map<String,Integer> testMap = new HashMap<>();
+        testMap.put("A",1);
+        testMap.put("B",2);
+        testMap.put("C",3);
+        testMap.put("D",4);
         Assert.assertEquals(testMap, countingGoodsInBasket.countingGoods(basket));
     }
 }
